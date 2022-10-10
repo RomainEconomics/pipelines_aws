@@ -1,3 +1,5 @@
+include .env
+
 up:
 	docker compose --env-file .env up --build -d
 
@@ -14,7 +16,8 @@ streamlit-app:
 	docker exec streamlit_app streamlit run app.py
 
 warehouse:
-	docker exec -ti warehouse psql postgres://sdeuser:sdepassword1234@localhost:5432/warehouse
+	echo "Creating warehouse"
+	psql ${RDS_POSTGRES_HOST}
 
 pytest:
 	docker exec loader pytest -p no:warnings -v /opt/sde/test
