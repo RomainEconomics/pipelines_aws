@@ -8,12 +8,12 @@ Therefore the focus is on building a robust infrastructure and improve my knowle
 What tools ?
 
 - **Python** as the main programming language
-- **AWS** used as the main cloud provider
-- **Terraform** used to built the AWS infrastructure (**Lambda** function, **RDS** to build a **Postgres** DB)
-- Source of truth will be a **S3** bucket, and the data will be made available from a RDS Postgres DB
+- **AWS** is used as cloud provider
+- **Terraform** is used to built the AWS infrastructure (**Lambda** function, **RDS** to build a **Postgres** DB)
+- The source of truth will be a **S3** bucket, and the data will be made available from a RDS Postgres DB
 - **Docker** to containerize the different applications. Two Python container.
   - one for extracting and loading the data to the RDS database
-  - one for a **streamlit** app
+  - one for a **streamlit** app to display the data available in the RDS database
 
 What's next ?
 
