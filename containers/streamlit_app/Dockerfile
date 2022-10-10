@@ -1,5 +1,6 @@
 FROM python:3.9.5
 
+# streamlit need the port 8501 to be exposed
 EXPOSE 8501
 
 # set up location of code
