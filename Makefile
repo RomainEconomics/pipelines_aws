@@ -16,7 +16,7 @@ streamlit-app:
 	docker exec streamlit_app streamlit run app.py
 
 warehouse:
-	echo "Creating warehouse"
+	echo "Connecting to the warehouse"
 	psql ${RDS_POSTGRES_HOST}
 
 pytest:
