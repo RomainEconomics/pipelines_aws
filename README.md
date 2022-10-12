@@ -1,7 +1,7 @@
 ## Pipelines on AWS using Twitter API data
 
 With this project, the idea is to fetch simple data from an API, here using Twitter to get the trending topics,
-and used all the different tools and infrastructure available to a data engineer today.
+and use all the different tools and infrastructure available to a data engineer today.
 
 Therefore the focus is on building a robust infrastructure and improve my knowledge using those tools.
 
